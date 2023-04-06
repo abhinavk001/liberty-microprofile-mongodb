@@ -60,11 +60,11 @@ public class PatientController {
     @APIResponses({
         @APIResponse(
             responseCode = "200",
-            description = "Successfully added crew member."),
+            description = "Successfully added patient."),
         @APIResponse(
             responseCode = "400",
-            description = "Invalid crew member configuration.") })
-    @Operation(summary = "Add a new crew member to the database.")
+            description = "Invalid patient configuration.") })
+    @Operation(summary = "Add a new patient to the database.")
     public Response add(Patient patient) {
         JsonArray violations = getViolations(patient);
 
